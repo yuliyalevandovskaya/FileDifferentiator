@@ -14,6 +14,7 @@ public class FileService {
 
     public boolean readFile(String fileName){
         InputStream input = FileService.class.getResourceAsStream("/" + fileName);
+
         DataInput dataInput = null;
         if(input!= null) {
             dataInput = new DataInputStream(input);

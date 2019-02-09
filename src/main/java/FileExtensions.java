@@ -9,7 +9,8 @@ public enum FileExtensions {
     public Map<String, byte[]> getMagicNumbersMap(){
         magicNumbersMap.put("jpg", new byte[] {(byte)0xFF, (byte)0xD8, (byte)0xFF, (byte)0xE0});
         magicNumbersMap.put("jpeg", new byte[] {(byte)0xFF, (byte)0xD8, (byte)0xFF, (byte)0xE0});
-        magicNumbersMap.put("gif", new byte[] {0x47, 0x49, 0x46, 0x38});
+        magicNumbersMap.put("gif", new byte[] {0x47, 0x49, 0x46, 0x38, 0x39, 0x61});
+        magicNumbersMap.put("pdf", new byte[] {0x25, 0x50, 0x44, 0x46});
         magicNumbersMap.put("doc", new byte[] {(byte)0xEC, (byte)0xA5, (byte)0xC1, (byte)0x00});
 
         return this.magicNumbersMap;

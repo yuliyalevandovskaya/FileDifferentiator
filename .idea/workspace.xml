@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f601acc-0e1f-4d56-b63c-dda433e17867" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FileServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FileExtensions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileExtensions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
@@ -25,29 +28,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="4" />
+          <entry key="gif" value="1" />
+          <entry key="java" value="5" />
           <entry key="txt" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="4" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="5" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2073" />
-          <entry key="txt" value="113" />
+          <entry key="java" value="2586" />
+          <entry key="txt" value="118" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2073" />
-          <entry key="PLAIN_TEXT" value="113" />
+          <entry key="JAVA" value="2586" />
+          <entry key="PLAIN_TEXT" value="118" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -59,16 +64,28 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FileServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+            <state relative-caret-position="87">
+              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,8 +113,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileExtensions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="270">
+              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+            <state relative-caret-position="720">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -141,8 +161,9 @@
         <option value="$PROJECT_DIR$/src/main/java/FileInput.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/FileExtensions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FileService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FileService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/FileServiceTest.java" />
       </list>
     </option>
   </component>
@@ -202,6 +223,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FileDifferentiator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fileMagicNumbers" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -214,7 +241,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549753253741" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549756327093" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -235,7 +262,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.FileServiceTest.verifyMagicNumbersTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="fileMagicNumbers" />
@@ -243,9 +270,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FileServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fileMagicNumbers" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FileServiceTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileServiceTest.isFileAcceptableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fileMagicNumbers" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FileServiceTest" />
+      <option name="METHOD_NAME" value="isFileAcceptableTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileServiceTest.verifyMagicNumbersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fileMagicNumbers" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FileServiceTest" />
+      <option name="METHOD_NAME" value="verifyMagicNumbersTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.FileServiceTest.isFileAcceptableTest" />
+      <item itemvalue="JUnit.FileServiceTest" />
+      <item itemvalue="JUnit.FileServiceTest.verifyMagicNumbersTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileServiceTest.verifyMagicNumbersTest" />
+        <item itemvalue="JUnit.FileServiceTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.FileServiceTest.isFileAcceptableTest" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +323,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549743955455</updated>
-      <workItem from="1549743964011" duration="9289000" />
+      <workItem from="1549743964011" duration="12356000" />
     </task>
     <task id="LOCAL-00001" summary="added FileInput, FileService classes, enum with acceptable file extensions">
       <created>1549745828376</created>
@@ -282,11 +346,50 @@
       <option name="project" value="LOCAL" />
       <updated>1549751070696</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixes">
+      <created>1549753278688</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1549753278688</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="FileServiceTest_isFileAcceptableTest - 2019.02.10 at 00h 07m 28s.xml">
+      <configuration name="FileServiceTest.isFileAcceptableTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileServiceTest_isFileAcceptableTest - 2019.02.10 at 00h 07m 44s.xml">
+      <configuration name="FileServiceTest.isFileAcceptableTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileServiceTest_isFileAcceptableTest - 2019.02.10 at 00h 09m 47s.xml">
+      <configuration name="FileServiceTest.isFileAcceptableTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileServiceTest_isFileAcceptableTest - 2019.02.10 at 00h 15m 36s.xml">
+      <configuration name="FileServiceTest.isFileAcceptableTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileServiceTest_isFileAcceptableTest - 2019.02.10 at 00h 20m 48s.xml">
+      <configuration name="FileServiceTest.isFileAcceptableTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileServiceTest_isFileAcceptableTest - 2019.02.10 at 00h 22m 29s.xml">
+      <configuration name="FileServiceTest.isFileAcceptableTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileServiceTest_isFileAcceptableTest - 2019.02.10 at 00h 22m 54s.xml">
+      <configuration name="FileServiceTest.isFileAcceptableTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileServiceTest_isFileAcceptableTest - 2019.02.10 at 00h 23m 07s.xml">
+      <configuration name="FileServiceTest.isFileAcceptableTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileServiceTest_isFileAcceptableTest - 2019.02.10 at 00h 23m 33s.xml">
+      <configuration name="FileServiceTest.isFileAcceptableTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileServiceTest - 2019.02.10 at 00h 51m 52s.xml">
+      <configuration name="FileServiceTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9289000" />
+    <option name="totallyTimeSpent" value="12356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -332,7 +435,8 @@
     <MESSAGE value="added FileInput, FileService classes, enum with acceptable file extensions" />
     <MESSAGE value="added methods" />
     <MESSAGE value="added extension to accept" />
-    <option name="LAST_COMMIT_MESSAGE" value="added extension to accept" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/FileInput.java">
@@ -353,34 +457,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/giphy.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FileExtensions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        <state relative-caret-position="270">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        <state relative-caret-position="90">
+          <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FileServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
