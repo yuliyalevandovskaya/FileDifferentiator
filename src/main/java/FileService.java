@@ -38,11 +38,12 @@ public class FileService {
             return false;
         }
 
-        fileInput.setMagicNumbers(FileExtensions.MAGIC_NUMBER.getMagicNumbers(this.fileInput.getExtension().toUpperCase()));
+        fileInput.setMagicNumbers(FileExtensions.MAGIC_NUMBER.getMagicNumbers(this.fileInput.getExtension()));
 
-            if(!verifyMagicNumbers(fileInput, dataInput)) {
-                return false;
-            }
+        if(!verifyMagicNumbers(fileInput, dataInput)) {
+            LOGGER.log(Level.SEVERE, "File extension is not " + this.fileInput.getExtension());
+            return false;
+        }
 
         return true;
     }
@@ -63,6 +64,7 @@ public class FileService {
         } catch (IOException exception){
             LOGGER.log(Level.SEVERE, exception.getMessage() + exception);
         }
+
         return true;
     }
 }
