@@ -1,8 +1,7 @@
 import org.apache.commons.lang3.StringUtils;
-import java.io.DataInput;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+
+import javax.xml.crypto.Data;
+import java.io.*;
 import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -15,9 +14,20 @@ public class FileService {
 
     public boolean readFile(String fileName){
         InputStream input = FileService.class.getResourceAsStream("/" + fileName);
-        DataInput dataInput = new DataInputStream(input);
+        DataInput dataInput = null;
+        if(input!= null) {
+            dataInput = new DataInputStream(input);
+        } else {
+           LOGGER.log(Level.SEVERE, "There is no such file. Please add file to read");
+           return false;
+        }
 
         String fileExtension = StringUtils.substringAfter(fileName,".");
+
+        if(fileExtension.equals("txt")){
+            return true;
+        }
+
         this.fileInput = new FileInput(fileExtension);
 
         if(!isFileAcceptable(this.fileInput)){
@@ -28,10 +38,13 @@ public class FileService {
             return false;
         }
 
-        fileInput.setMagicNumbers(FileExtensions.MAGIC_NUMBER.getMagicNumbers(this.fileInput.getExtension()));
+        fileInput.setMagicNumbers(FileExtensions.MAGIC_NUMBER.getMagicNumbers(this.fileInput.getExtension().toUpperCase()));
 
+            if(!verifyMagicNumbers(fileInput, dataInput)) {
+                return false;
+            }
 
-        return false;
+        return true;
     }
 
     public boolean isFileAcceptable(FileInput fileInput){
@@ -39,15 +52,17 @@ public class FileService {
                 .anyMatch((extension) -> extension.name().equalsIgnoreCase(fileInput.getExtension()));
     }
 
-    public boolean verifyMagicNumbers(FileInput fileInput, DataInput dataInput) throws IOException {
+    public boolean verifyMagicNumbers(FileInput fileInput, DataInput dataInput) {
         byte[] magicNumbers = fileInput.getMagicNumbers();
-        for(int i = 0; i < magicNumbers.length; i++){
-            if(dataInput.readByte() != magicNumbers[i]) {
-                return false;
+        try{
+            for(int i = 0; i < magicNumbers.length; i++){
+                if(dataInput.readByte() != magicNumbers[i]) {
+                    return false;
+                }
             }
+        } catch (IOException exception){
+            LOGGER.log(Level.SEVERE, exception.getMessage() + exception);
         }
-
         return true;
     }
-
 }
