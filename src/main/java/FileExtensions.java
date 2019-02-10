@@ -19,11 +19,10 @@ public enum FileExtensions {
     public byte[] getMagicNumbers(String fileExtension) {
         byte [] magicNumbers = new byte[4];
         for(Map.Entry<String, byte[]> entry : getMagicNumbersMap().entrySet()){
-            if(getMagicNumbersMap().containsKey(fileExtension)){
+            if(entry.getKey().equals(fileExtension)){
                 return entry.getValue();
             }
         }
         return magicNumbers;
     }
-
 }
